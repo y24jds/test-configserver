@@ -47,3 +47,5 @@ Action:
 
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 
+# The Problem:
+With debug=true on, you can get more detailed info that showed me that the problem is in the FileMonitorConfiguration class in spring-cloud-config-monitor, Spring finds 2 beans as candidates for the AbstractScmEnvironmentRepository scmRepository field.  It doesn't know which to use.
