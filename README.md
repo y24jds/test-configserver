@@ -7,10 +7,11 @@ Spring Cloud Config Server with Composite Repositories and monitor dependency
 https://start.spring.io/
 Using the Greenwich.RELEASE version of spring-cloud
 2. Also added the spring-cloud-config-monitor dependency to pom.xml
-   <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-monitor</artifactId>
-		</dependency>
+```xml<dependency>
+<groupId>org.springframework.cloud</groupId>
+<artifactId>spring-cloud-config-monitor</artifactId>
+</dependency>
+```
 3. Also added the AMQP dependency to pom.xml
    <dependency>
 			<groupId>org.springframework.cloud</groupId>
