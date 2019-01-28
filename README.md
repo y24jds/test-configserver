@@ -1,7 +1,7 @@
 # test-configserver
 Spring Cloud Config Server with Composite Repositories and monitor dependency
 
-#Steps to reproduce issue of using composite repositories and spring-cloud-config-monitor dependency
+# Steps to reproduce issue of using composite repositories and spring-cloud-config-monitor dependency
 
 1. Used spring Initalizr to create new project with Spring Boot 2.1.2, Config Server, and Cloud Bus.
 https://start.spring.io/
@@ -30,7 +30,7 @@ spring.cloud.config.server.composite[1].uri=http://github.com/y24jds/{applicatio
 
 6.  Start the application
 
-#Issue:
+# Issue:
 Observe that the following is logged:
 ***************************
 APPLICATION FAILED TO START
