@@ -9,15 +9,15 @@ Using the Greenwich.RELEASE version of spring-cloud
 2. Also added the spring-cloud-config-monitor dependency to pom.xml
 ```xml<dependency>
 <groupId>org.springframework.cloud</groupId>
-<artifactId>spring-cloud-config-monitor</artifactId>
+  <artifactId>spring-cloud-config-monitor</artifactId>
 </dependency>
 ```
 3. Also added the AMQP dependency to pom.xml
-   <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
-    
+```xml<dependency>
+<groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+</dependency>
+```    
 4. Make sure that the main application class is annotated with: @SpringBootApplication, @EnableConfigServer, @Configuration
 
 5. Add the following to the application.properties file (note, it doesnt really matter if the git repo's point to a valid repo or not, just the fact of using a composite repository definition and adding at least 2 repo's breaks spring-cloud-config-monitor):
