@@ -21,11 +21,10 @@ Using the Greenwich.RELEASE version of spring-cloud
 4. Make sure that the main application class is annotated with: @SpringBootApplication, @EnableConfigServer, @Configuration
 
 5. Add the following to the application.properties file (note, it doesnt really matter if the git repo's point to a valid repo or not, just the fact of using a composite repository definition and adding at least 2 repo's breaks spring-cloud-config-monitor):
-spring.profiles.active=composite
 
+spring.profiles.active=composite
 spring.cloud.config.server.composite[0].type=git
 spring.cloud.config.server.composite[0].uri=http://github.com/y24jds/common.git
-
 spring.cloud.config.server.composite[1].type=git
 spring.cloud.config.server.composite[1].uri=http://github.com/y24jds/{application}.git
 
